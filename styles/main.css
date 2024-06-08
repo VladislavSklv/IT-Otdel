@@ -58,33 +58,33 @@
   margin-left: auto;
 }
 
-/* Тоже самое, что и: .promo .promo__title */
 .promo {
   padding-top: 100px;
   color: var(--font-color);
-  .promo__title {
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 88px;
-    margin-bottom: 37px;
-  }
-  .promo__description {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22.98px;
-    margin-bottom: 77px;
-  }
-  .button {
-    padding: 25px 105px;
-    background-color: var(--tertiary-color);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25.32px;
-  }
-  .promo__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+}
+
+.promo .promo__title {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 88px;
+  margin-bottom: 37px;
+}
+.promo .promo__description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22.98px;
+  margin-bottom: 77px;
+}
+.promo .button {
+  padding: 25px 105px;
+  background-color: var(--tertiary-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.32px;
+}
+.promo .promo__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -114,31 +114,33 @@
   background-color: var(--light-color);
   margin: 0 10px;
   padding: 16px 17px;
-  .card__avatar {
-    width: 250px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 62px;
-    img {
-      width: 100%;
-    }
-  }
+}
 
-  .card__name {
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    color: var(--font-color);
-    margin-bottom: 15px;
-  }
+.card .card__avatar {
+  width: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 62px;
+}
 
-  .card__role {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 27.58px;
-    text-align: center;
-    color: var(--font-color);
-    padding: 0 20px;
-  }
+.card .card__avatar img {
+  width: 100%;
+}
+
+.card .card__name {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--font-color);
+  margin-bottom: 15px;
+}
+
+.card .card__role {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.58px;
+  text-align: center;
+  color: var(--font-color);
+  padding: 0 20px;
 }
