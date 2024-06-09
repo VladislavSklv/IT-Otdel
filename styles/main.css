@@ -112,16 +112,17 @@ body {
   margin-bottom: 50px;
 }
 
-.employee .employee__wrapper {
-  display: flex;
-  height: 480px;
+.employee .employee-slider {
+  height: 500px;
+  padding-bottom: 20px;
 }
-
+.swiper-wrapper {
+  height: 100%;
+}
 .card {
   height: 100%;
   width: 285px;
   background-color: var(--light-color);
-  margin: 0 10px;
   padding: 16px 17px;
 }
 
@@ -153,6 +154,16 @@ body {
   text-align: center;
   color: var(--font-color);
   padding: 0 20px;
+}
+
+/* Для слайдера */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--secondary-color);
+}
+
+.employee .swiper .swiper-scrollbar {
+  bottom: 5px;
 }
 
 .footer .footer__wrapper {
@@ -189,6 +200,20 @@ body {
 
 .footer .footer__link:last-child:after {
   display: none;
+}
+
+.footer .footer__hrefs {
+  height: 24px;
+}
+
+.footer .footer__hrefs a {
+  display: inline-block;
+  width: 24px;
+  height: auto;
+}
+
+.footer .footer__hrefs a img {
+  width: 100%;
 }
 
 .footer .footer__hrefs a:first-child {
