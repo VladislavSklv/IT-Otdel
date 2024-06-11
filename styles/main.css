@@ -134,13 +134,49 @@ section {
   justify-content: space-between;
 }
 
+.promo .promo__img {
+  width: 600px;
+  flex-shrink: 0;
+}
+
+.promo .promo__img img {
+  width: 100%;
+}
+
 .employee .employee-slider {
   height: 500px;
   padding-bottom: 20px;
 }
+
+.about-item {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+}
+
+.about-item .about-item__image {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.about-item .about-item__image .text {
+  margin-top: 10px;
+}
+
+.about-item_r .about-item__image {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.about-item .about-item__content {
+  padding-top: 20px;
+}
+
 .swiper-wrapper {
   height: 100%;
 }
+
 .card {
   height: 100%;
   width: 285px;
