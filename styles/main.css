@@ -25,6 +25,14 @@ body {
   padding: 0 20px;
 }
 
+h3 {
+  font-family: "Overpass", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.64px;
+  text-align: left;
+}
+
 h4 {
   font-family: "Overpass", sans-serif;
   font-size: 32px;
@@ -240,6 +248,31 @@ section {
   font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
+}
+
+.opportunity .opp__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.opportunity .opp__item {
+  width: 300px;
+  text-align: center;
+}
+
+.opportunity .opp__item .opp__img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.opportunity .opp__item .opp__img img {
+  width: 100%;
+}
+
+.opportunity .opp__item h3 {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .footer .logo {
