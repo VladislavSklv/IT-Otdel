@@ -17,6 +17,10 @@
   --accent-light-color: #e97deb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 60px 0;
 }
