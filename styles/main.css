@@ -13,6 +13,8 @@
   --light-color: #d9d9d9;
   --container-width: 1300px;
   --font-color: #000;
+  --accent-color: #ba68c8;
+  --accent-light-color: #e97deb;
 }
 
 body {
@@ -23,6 +25,16 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+h2 {
+  font-family: "Overpass", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 81.02px;
+  text-align: center;
+  color: var(--font-color);
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -42,16 +54,6 @@ h4 {
 
 section {
   margin-bottom: 200px;
-}
-
-.title {
-  font-family: "Overpass", sans-serif;
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 81.02px;
-  text-align: center;
-  color: var(--font-color);
-  margin-bottom: 50px;
 }
 
 .text {
@@ -273,6 +275,53 @@ section {
 .opportunity .opp__item h3 {
   text-align: center;
   margin-bottom: 24px;
+}
+
+.questions__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.message {
+  position: relative;
+  width: 60%;
+  font-family: "Overpass", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40.51px;
+  border-radius: 20px;
+  background-color: var(--accent-color);
+  margin-bottom: 40px;
+  padding: 25px 20px;
+  color: #fff;
+}
+
+.message::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--accent-color);
+  transform: rotate(-80deg);
+}
+
+.message_r {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.58px;
+  margin-left: auto;
+  background-color: var(--accent-light-color);
+}
+
+.message_r::after {
+  left: unset;
+  right: -5px;
+  border-top: 15px solid var(--accent-light-color);
+  transform: rotate(80deg);
 }
 
 .footer .logo {
